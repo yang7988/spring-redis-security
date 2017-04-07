@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>登录 - ${title}</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="${ieVersion}"/>
+    <link rel="stylesheet" type="text/css"
+          href="${requestContext.contextPath}/static/plugins/jquery-easyui-${easyuiVersion}/themes/${easyuiSkinName}/easyui.min.css">
+    <link rel="stylesheet" type="text/css" href="${requestContext.contextPath}/static/themes/${skinName}/base.min.css">
+    <style type="text/css">
+        td {
+            padding: 5px 0;
+        }
+
+        td.attribute {
+            text-align: right;
+        }
+
+        td.attribute label {
+            color: #005088;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+
+        .input {
+            border: 1px solid #A4BED4;
+            height: 20px;
+            line-height: 20px;
+            padding: 0 2px;
+            width: 160px;
+        }
+
+            /* Styles for Tabs on Side */
+        #login-container {
+            position: absolute;
+            top: 190px;
+            left: 150px;
+            width: 400px;
+            background: transparent;
+        }
+
+        #login-container ul {
+            height: 100px;
+            list-style: none;
+            padding: 0;
+            width: 270px;
+            margin: 0 auto;
+        }
+
+        #login-container ul li {
+            width: 90px;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            float: left;
+        }
+
+        #login-container ul li a {
+            color: #0A9BEA;
+            display: block;
+            padding: 10px 0;
+            outline: none;
+        }
+
+        #login-container ul li a:hover {
+            color: #B24A12;
+            text-decoration: none
+        }
+
+        #login-container ul li.selected-tab {
+            position: relative;
+            left: 1px;
+        }
+
+        #login-container ul li:first-child.selected-tab {
+        }
+
+        #login-container ul li a.selected-tab {
+            color: #B24A12;
+            font-weight: bold;
+            text-decoration: none;
+            border-bottom: 2px solid #B24A12;
+        }
+
+        #login-container .panel-container {
+            padding-top: 10px;
+            padding-left: 20px;
+            height: 80px;
+        }
+
+        .pinkey-wrapper, .cardlogin-wrapper {
+            width: 250px;
+            margin: 0 auto;
+        }
+
+            /* pin button */
+        .pin-login-btn {
+            background: #EEE;
+            color: #333;
+            display: inline-block;
+            padding: 10px 20px 10px;
+            text-decoration: none;
+        }
+
+        .pin-login-btn:hover {
+            background: #333;
+            color: #EEE;
+        }
+
+        .login-container form {
+            background: transparent;
+        }
+
+        .bottom-line {
+            border-bottom: 2px solid #5E94B5;
+        }
+
+            /* pin button end */
+    </style>
+</head>
+<body style="visibility:hidden" class="logonbg">
+<div class="logon_title">
+    <div id="login-container">
+        <div class="panel-container">
+            <div id="side-tab1" class="displayed" style="display: block;">
+                <form id="normalform" style="margin:0" method="post"
+                      action="${requestContext.contextPath}/account/dologin"
+                      onkeypress="submitForm(event,'#normalform')">
+                    <input id="targetUrl" name="targetUrl" type="hidden"/>
+                    <table style="border-collapse:collapse;border-spacing:0;margin-top: -20px;">
+                        <tr>
+                            <td></td>
+                            <td>
+                                <span id="error" style="color: red; display:  none">登陆失败，请联系管理员！</span>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td style="width:100px;" class="attribute">
+                                <label for="username">账&nbsp;&nbsp;&nbsp;&nbsp;号</label>
+                            </td>
+                            <td style="width:170px;">
+                                <input type="text" id="username" name="username" class="input easyui-validatebox"
+                                       tabindex="1"
+                                       validType="digitletter_[1,8]" required="true" focused="true"/>
+                            </td>
+                            <td style="visibility: hidden;">
+                                <input type="submit" value="登录" tabindex="4"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="attribute">
+                                <label for="password">密&nbsp;&nbsp;&nbsp;&nbsp;码</label>
+                            </td>
+                            <td>
+                                <input type="password" id="password" name="password" class="input easyui-validatebox" tabindex="2" />
+                            </td>
+                            <td>
+                                <a href="#" onclick="$('#normalform input[type=submit]').click();">
+                                    <img alt="logon" src="${requestContext.contextPath}/static/themes/${skinName}/images/icon-go.png">
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <ul>
+            <li class=""><a href="#side-tab1" class="">密码登录</a></li>
+        </ul>
+    </div>
+</div>
+<script type="text/javascript" src="${requestContext.contextPath}/static/scripts/jquery-${jqueryVersion}.min.js"></script>
+<script type="text/javascript" src="${requestContext.contextPath}/static/plugins/jquery-easyui-${easyuiVersion}/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="${requestContext.contextPath}/static/plugins/jquery-easyui-${easyuiVersion}/locale/easyui-lang-zh_CN.js"></script>
+<script type="text/javascript" src="${requestContext.contextPath}/static/scripts/jquery-domain.js"></script>
+<script type="text/javascript" src="${requestContext.contextPath}/static/scripts/md5-min.js"></script>
+<script type="text/javascript" src="${requestContext.contextPath}/static/plugins/jquery-easytabs-3.2.0/jquery.hashchange.min.js"></script>
+<script type="text/javascript" src="${requestContext.contextPath}/static/plugins/jquery-easytabs-3.2.0/jquery.easytabs.min.js"></script>
+
+<script type="text/javascript">
+    var isSubmitClick = false, hasSubmit = false;//chrome 浏览器会默认提交表单，此全局变量在点击submit按钮后设置为true
+    $(function () {
+        //判断是否被内嵌，则刷新顶层页面
+        if ((parent && parent != self) || (window.document.title.indexOf('登录') < 0)) {
+            $('body').css({ visibility: "hidden" });
+            top.window.location.reload();
+            return;
+        }
+        $('#login-container').easytabs({
+            animate: false,
+            tabActiveClass: "selected-tab",
+            panelActiveClass: "displayed"
+        });
+
+        //登录成功跳转页面
+        var targetUrl = $.query.get("targetUrl");
+        if (targetUrl != null && targetUrl != undefined) {
+            targetUrl = targetUrl.toLowerCase();
+            $("#targetUrl").val(decodeURIComponent(targetUrl));
+        }
+
+        $.parser.parse();
+        $('body').css({ visibility: "visible" });
+        $('#username').focus();
+        $('input[type=submit]').bind("click", function () {
+            if (!hasSubmit) {
+                isSubmitClick = true;
+            }
+        });
+        $('#normalform').submit(function (evt) {
+            if (isSubmitClick && $(this).form('validate')) {
+                isSubmitClick = false;
+                hasSubmit = true;
+                $("#password").val(hex_md5($("#password").val()));
+                return true;
+            }
+            return false;
+        });
+
+        var errorMsg = $.query.get('error');
+        if (errorMsg) {
+            //var msg = decodeURI(errorMsg);
+            //$("#error").html(msg);
+            $("#error").css({ display: "block" });
+        }
+    });
+
+    function submitForm(event, formID) {
+        event = event || window.event;
+        if (event.keyCode === 13) {
+            $(formID + ' input[type=submit]').click();
+        }
+
+    }
+</script>
+</body>
+</html>

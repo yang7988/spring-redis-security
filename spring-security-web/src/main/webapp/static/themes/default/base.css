@@ -1,0 +1,216 @@
+html {
+    height:100%;
+    width:100%;
+    padding: 0;
+    margin: 0; 
+    border: 0; 
+    background: #fff; /*#dfe8f6*/
+    font-size: 14px; 
+    /*: Lucida Grande,Lucida Sans,Arial,sans-serif;*/
+    /*: Verdana, Helvetica, Sans-Serif;*/
+    color: #333;
+    /* hide overflow:hidden from IE5/Mac */ 
+    /* \*/ 
+    overflow: hidden; 
+    /* */ 
+}
+
+body {
+    height:100%;
+    width:100%;
+    overflow: hidden; 
+    padding: 0; 
+    margin: 0; 
+    border: 0;
+}
+
+/*遮罩 开始*/
+#loading-mask{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    z-index:20000;
+    background-color:white;
+}
+#loading{
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:-30px;
+    margin-left:-145px;
+    padding:0;
+    width:290px;
+    height:60px;
+    z-index:20001;
+    background: white url("images/extanim32.gif") 14px 14px no-repeat;
+    border-radius:5px;
+}
+#loading .loading-text{
+    color: #555;
+    font: bold 13px tahoma,arial,helvetica;
+    padding-top: 22px;
+    margin-left: 60px;
+}
+/*遮罩 结束*/
+
+/*链接 开始*/
+a{
+    color: #034af3;
+    text-decoration: none;
+}
+a:visited{
+    color: #505abc;
+}
+a:hover{
+    color: #1d60ff;
+    /*text-decoration: underline;*/
+}
+a:active{
+    color: #12eb87;
+}
+a.external 
+{
+    color: #000;
+    padding-right: 18px;
+    background: transparent url(images/external.gif) no-repeat center right;
+}
+a.popup 
+{
+    color: #000;
+    padding-right: 18px;
+    background: transparent url(images/popup.gif) no-repeat center right;
+}
+/*链接 结束*/
+
+/*表单 开始*/
+.property {
+    display:inline-block;
+    margin:5px 0 0 5px;
+    padding:0;
+    white-space:nowrap;
+}
+.property .label {
+    display:inline-block;
+    white-space:nowrap;
+}
+.property .block {
+    display:block;
+}
+.property input.input {
+    border:1px solid #A4BED4;
+    font-size: 14px;
+    height: 20px;/*IE下为22*/
+    line-height: 20px;/*IE下为22*/
+    padding: 0;
+    width:94px;
+}
+.property select.input {
+    border:1px solid #A4BED4;
+    font-size: 14px;
+    height: 22px;
+    line-height: 22px;
+    padding: 0;
+    width:100px;
+}
+.property .label span {
+    color:red;
+    padding:0 2px;
+}
+/*表单结束*/
+
+/*头部开始*/
+.head {
+    background:url(images/head_bg.gif) repeat-x;
+    height:68px;
+}
+.logo {
+    float:left;
+    height:68px;
+}
+.logo a {
+    display:inline-block;
+    float: left;
+}
+.logo a.logo {
+    background:url(images/logo.gif) no-repeat;
+    height:68px;
+    width:163px;
+}
+.logo a.title {
+    background:url(images/title.gif) no-repeat;
+    height:68px;
+    width:294px;
+}
+.tips {
+    background:url(images/tips_bg.gif) repeat-x;
+    float: right;
+    height:26px;
+    list-style-type:none;
+    margin:0 5px 0 0;
+    padding:0;
+}
+.tips li {
+    display:inline-block;
+    float:left;
+    margin:0;
+    padding:0;
+    position:relative;
+}
+.tips li.left {
+    background:url(images/tips_left.gif) repeat-x;
+    height:27px;
+    width:39px;
+}
+.tips li.right {
+    background:url(images/tips_right.gif) repeat-x;
+    height:27px;
+    width:31px;
+}
+.tips li span {
+    display:inline-block;
+    height:25px;
+    line-height:25px;
+    margin:0;
+    padding:0 4px;
+}
+.tips li a {
+    text-decoration: none;
+}
+.tips li a:visited {
+
+}
+.tips li a:hover {
+    text-decoration: underline;
+}
+/*头部结束*/
+
+.formitem{
+    margin-top: 10px;
+}
+
+/*右对齐一行表单*/
+.formitem label{
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.input{
+    border:1px solid #A4BED4;
+    height:20px;
+    line-height:20px;
+    padding:0 2px;
+    width:150px;
+}
+
+/*标题默认背景*/
+.title{
+    background-color: #E9E9E9;
+    height: 22px;
+    line-height: 22px;
+    font-weight: bold;
+}

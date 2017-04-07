@@ -1,0 +1,327 @@
+.lee-cards-main-wrapper {
+    overflow: auto;
+}
+
+.lee-cards-main {
+    min-height: 212px;
+    border-bottom: 1px solid #E4F3F6;
+    box-shadow: 0 0 10px #E0ECFF;
+    overflow: auto;
+    zoom: 1;
+}
+.lee-cards-tips{
+    margin:5px 0 0 20px;
+    padding:5px;
+    font-size: 16px;
+    background-color: #CBE0FB;
+    border-radius: 6px;
+    display: none;
+}
+.lee-cards-tips-icon{
+    width:45px;
+    height:40px;
+    display: block;
+    float: left;
+    position: relative;
+    top:5px;
+}
+.lee-cards-wrapper {
+}
+
+.lee-card-body {
+    float: left;
+    padding: 5px;
+    margin: 5px;
+    background: #CBE0FB;
+    border-radius: 6px;
+}
+
+.lee-card-selected {
+    background: #FEA285;
+}
+
+/*lee card toolbar style*/
+.lee-card-toolbar {
+    font-size: 12px;
+    color: #000;
+    margin-bottom: 5px;
+    padding: 5px;
+    background: #F1F8FF;
+    border-radius: 6px;
+    overflow: auto;
+    zoom: 1;
+    *display: inline;
+}
+
+.lee-card-selected .lee-card-toolbar {
+    background: #FF6C3D;
+}
+
+.lee-card-checkbox-body {
+    float: left;
+}
+
+.lee-card-checkbox-body label {
+    cursor: pointer;
+    position: relative;
+    top: -2px;
+    _top:-3px;
+}
+.lee-card-status-plain-body
+{
+    float: left;
+    padding-right: 10px;
+}
+/*lee card toolbar style end*/
+.lee-card {
+    width: 335px;
+    height: 212px;
+    background-repeat: repeat;
+    background-position: left top;
+    position: relative;
+    background-color: #E0ECFF;
+    color: #000;
+    font: normal 11px/1.2 Sans-Serif;
+    display: inline-block;
+    box-shadow: 0 0 10px #E0ECFF;
+    cursor: default;
+    float: left;
+    *float: none;
+    /*filter:alpha(opacity=50);  */
+}
+
+/*card bg*/
+/*普通蓝卡*/
+.c01{
+    background: url(images/card/card01.jpg) no-repeat left top;
+}
+/*金融蓝卡*/
+.c03{
+    background: url(images/card/card03.jpg) no-repeat left top;
+}
+/*普通黄卡*/
+.c04{
+    background: url(images/card/card04.jpg) no-repeat left top;
+}
+/*优待黄卡*/
+.c05{
+    background: url(images/card/card05.jpg) no-repeat left top;
+}
+/*普通优待黄卡*/
+.c06{
+    background: url(images/card/card06.jpg) no-repeat left top;
+}
+/*金融优待黄卡*/
+.c08{
+    background: url(images/card/card08.jpg) no-repeat left top;
+}
+/*card bg end*/
+
+.lee-card .leecard-info {
+    position: absolute;
+}
+
+.barcode {
+    width: 131px;
+    height: 24px;
+    background-repeat: no-repeat;
+}
+
+.card-head {
+    width: 74px;
+    height: 96px;
+    background-repeat: no-repeat;
+}
+
+.business-panel {
+    background-color: #EFF0F2;
+    box-shadow: 0 0 10px #E0ECFF;
+    padding: 10px;
+    overflow: auto;
+    zoom: 1;
+}
+
+/*button*/
+.btn.btn-lg, .input-group-lg .btn {
+    font-size: 17px;
+    line-height: 20px;
+    padding: 12px 18px 13px;
+}
+
+.btn {
+    text-align: center;
+    border: none;
+    background: #bdc3c7;
+    color: #ffffff;
+    padding: 9px 12px 10px;
+    line-height: 22px;
+    text-decoration: none;
+    border-radius: 6px;
+    -webkit-transition: 0.25s linear;
+    -moz-transition: 0.25s linear;
+    -o-transition: 0.25s linear;
+    transition: 0.25s linear;
+    -webkit-backface-visibility: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.btn.btn-primary {
+    background-color: #1abc9c;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.btn:hover, .btn:focus, .btn-group:focus .btn.dropdown-toggle {
+    background-color: #cacfd2;
+    color: #ffffff;
+    outline: none;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+    -webkit-backface-visibility: hidden;
+}
+
+a:hover, a:focus {
+    color: #1abc9c;
+    text-decoration: none;
+}
+
+.btn:hover, .btn:focus {
+    color: #333333;
+    text-decoration: none;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+    color: #ffffff;
+    background-color: #4ECEB4;
+    border-color: #288E7A;
+}
+
+.btn-wrapper {
+    float: left;
+}
+
+.row {
+    padding-left: 15px;
+}
+
+.row:before, .row:after {
+    display: table;
+    content: " ";
+}
+
+.row:after {
+    clear: both;
+}
+
+.row:before, .row:after {
+    display: table;
+    content: " ";
+}
+
+.row:after {
+    clear: both;
+}
+
+.hack {
+    *width: 200px;
+}
+
+.left-rigion p {
+    line-height: 1.5;
+}
+
+.demo-card-table td {
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
+}
+
+.btn-getselected {
+}
+
+/*service icon*/
+.lee-services-list-outer {
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+.service-icon-outer {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.service-icon-outer p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.service-icon {
+    width: 90px;
+    height: 70px;
+    display: inline-block;
+}
+
+.lee-cards-main-title {
+
+}
+
+.left-title
+{
+    height: 28px;
+    background: #eee;
+    margin-top: 4px;
+    margin-left: 20px;
+    line-height: 28px;
+}
+.lee-services-title{
+    background: url(images/servicehome_sep.gif) no-repeat left center;
+    padding-left: 45px;
+    height: 39px;
+    width: 651px;
+    font-size: 16px;
+    line-height: 39px;
+}
+/*card status style*/
+.lee-card-status
+{
+    position: absolute;
+    top:0;
+    right:0;
+    z-index: 9;
+}
+.lee-card-status-icon
+{
+    width: 72px;
+    height: 100px;
+    background: url(images/card/cardstatus.png) no-repeat;
+}
+.lee-card-status-ok
+{
+    background-position:-25px -22px;
+}
+.lee-card-status-ml
+{
+    background-position:-258px -22px;
+}
+.lee-card-status-bl
+{
+    background-position:-141px -22px;
+}
+.lee-card-status-cancel
+{
+    background-position:-374px -22px;
+}
+/*end card status style*/

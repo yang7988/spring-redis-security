@@ -1,0 +1,89 @@
+.vsteps {
+    overflow: hidden;
+}
+
+.vsteps li.lee-vlist-item {
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.vsteps li.lee-vlist-item div.top-item {
+    background: #EDF5FF;
+    padding: 5.5px;
+    border-left: 5px solid #E0DEDA;
+    cursor: pointer;
+    position: relative;
+    font-size: 14px;
+}
+
+.vsteps li.selected div.top-item {
+    background: #B4D5FF;
+    border-left: 5px solid #C6C4C0;
+    color: #000;
+}
+
+.vsteps li.lee-vlist-item-sub {
+    border-bottom: 1px solid #F7E5CB;
+}
+
+.vsteps li.lee-vlist-item-sub div.child-item {
+    border-left: 5px solid #F2E0C7;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.vsteps .lee-sub-item {
+    background: #FFF;
+}
+
+.vsteps li.lee-vlist-item li.selected div.child-item {
+    background: #FFECD1;
+}
+
+.vsteps li.disabled {
+}
+
+.title {
+    background-color: #D1E5FD;
+    padding: 5px;
+}
+
+.top-line {
+    border: 2px solid #D1E5FD;
+}
+
+.vstep-body-title {
+    width: 180px;
+    background: #D1E5FD;
+    padding: 5px;
+    position: relative;
+    top: -3px;
+}
+
+.vstep-body-inner ul.staticdesc {
+    margin: 10px;
+}
+
+.vstep-body-inner ul.staticdesc  li {
+    padding: 5px;
+}
+
+/*sub item style*/
+.lee-sub-item {
+    position: relative;
+    left: 20px;
+    top: 0;
+}
+.lee-tree-ctl{
+    height: 32px;
+    width: 32px;
+    right:0;
+    top:0;
+    position: absolute;
+}
+.ctl-item .expand{
+   background: url(images/directional_down_16.png) no-repeat left center;
+}
+.ctl-item .collapse{
+   background: url(images/directional_up_16.png) no-repeat left center;
+}

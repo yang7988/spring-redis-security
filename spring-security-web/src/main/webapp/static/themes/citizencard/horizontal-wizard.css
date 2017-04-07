@@ -1,0 +1,287 @@
+body {
+    color: #333333;
+    font-family: Microsoft YaHei, Lucida Grande, Lucida Sans, Arial, sans-serif;
+    /*background: url(images/apphome/business_bg_pic.gif) no-repeat right bottom;*/
+}
+body {
+    /*background: url(images/oldLoginBackground.jpg) repeat;*/
+}
+.input {
+    width: 143px;
+}
+.simple-table td{
+   padding:3px;
+}
+.identitycard-input
+{
+    width:153px;
+}
+.first-step-tips{
+    position: absolute;
+    top:180px;
+    left:200px;
+    color:#999999;
+}
+/*label style start*/
+label {
+    font-size: 12px; /* for ie6*/
+    display: inline-block;
+}
+.formitem label{
+    width:70px;
+}
+label.radio-label {
+    width: auto;
+    top: -2px;
+    position: relative;
+}
+label.card-desc {
+    width: 150px;
+}
+
+label.textarea-label {
+    position: relative;
+    top: -30px;
+    /*top: -30 px\0; *//* ie 8/9*/
+    /*top: -30 px\9\0; *//* ie 9*/
+}
+label.checkbox-desc
+{
+    position: relative;
+    top:0;
+}
+label.checkbox-label
+{
+    width: auto;
+    top: -2px;
+    position: relative;
+    margin-right: 10px;
+}
+/*label style end*/
+
+#readCardControl {
+    position: absolute;
+}
+.citizencard-item, .identitycard-item {
+    position: relative;
+}
+.identitycard-nofirst
+{
+    width: 287px;
+}
+.reader-container {
+    /*float:left;*/
+    float: right;
+    /*right: -35px;*/
+    /*top: 3px;*/
+    width:35px;
+    margin-left: 3px;
+}
+
+.reader-container a {
+    cursor: pointer;
+}
+
+.identitycard-reader {
+    display: block;
+    background: url(images/idcard.gif) no-repeat left center;
+    height: 20px;
+}
+
+.citizencard-reader {
+    display: block;
+    background: url(images/citizencard.gif) no-repeat left center;
+    padding-left: 32px;
+    height: 20px;
+}
+
+/*代办人*/
+.proxy-title {
+    padding: 5px;
+    background: #A0C5FA;
+    border-left: 4px solid #4B94FA;
+    margin: 10px 0 10px 15px;
+    color: #333;
+}
+
+.radio-desc {
+    position: relative;
+    top: -2px;
+}
+/*last step style*/
+.last-ok
+{
+    color:#3B454A;
+    background-color: #7BD4FE;
+    border:1px solid;
+    border-color: #5695B2 #DFE3E6 #DFE3E6 #5695B2;
+    padding-left:28px;
+    display: inline-block;
+    line-height: 25px;
+}
+.last-ok:hover
+{
+    color:#E92C17;
+    text-decoration: underline;
+}
+/*last step style end */
+.last-step
+{
+}
+.last-tips {
+    font-size: 16px;
+    color: #898989;
+    text-align: center;
+}
+
+.last-tips .tip {
+    padding: 10px 10px 10px 35px;
+    text-align: center;
+}
+.wizard-tip-content{
+    display: block;
+    font-weight: normal;
+    padding-top: 10px;
+}
+.text-right{
+    text-align: right;
+}
+.font-red{
+    color: #cd2715;
+}
+.item-value {
+    display: inline-block;
+    +display:inline;
+/*// IE7*/
+    _display:inline;
+/*// IE6*/
+}
+
+/*loading start*/
+.ajax-loading-mask {
+    position: absolute;
+    z-index: 9999;
+    height: 2000px;
+    width: 2000px;
+    background: #9FD4EE;
+    opacity:0.4;
+    filter:alpha(opacity=40);
+    top: 0;
+    left: 0;
+}
+.loading-icon {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    z-index: 10000;
+}
+
+/*loading end*/
+
+/*form style*/
+.business-table {
+    width: 910px;
+}
+
+.business-table-outer {
+    width: 910px;
+    overflow: auto;
+    margin-left: 60px;
+}
+
+.business-bigtable {
+    width: 900px;
+}
+
+.business-bigtable-outer {
+    width: 900px;
+    overflow: auto;
+    margin-left: 10px;
+}
+.input-tip{
+    padding-left:10px ;
+    color:#cd2715;
+}
+/*form style end*/
+
+.clearfloat {
+    float: none;
+    clear: both;
+    visibility: hidden;
+    position: absolute;
+}
+/*scanner style*/
+.lee-scan-panel
+{
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.lee-scan-panel-title
+{
+    background: #A0C5FA; border-left: 4px solid #4B94FA; color: #333; padding: 5px;
+}
+.normal-btn
+{
+    color: #344052;
+    padding-left: 32px;
+}
+.normal-btn:hover
+{
+    color: #D63333;
+}
+/*end scanner style*/
+a.l-btn
+{
+    /*background-position: top right;*/
+}
+/*apply style*/
+
+.apply-last-step .formitem {
+    float: left;
+}
+
+.onlyone-item-textareas {
+    width: 290px;
+}
+
+.two-items {
+    width: 90px;
+}
+
+.scan-btn {
+    float: right;
+}
+
+.last-step-table {
+    width: 400px;
+}
+
+/*apply style end*/
+
+/*服务处理结果*/
+.lee-table{
+    border-collapse:collapse;
+    border:1px solid #333;
+    color:#111;
+}
+.lee-table th{
+    padding:5px;
+    border: 1px solid #333;
+    word-break: break-all;
+}
+.lee-header-c6{
+    width:120px;
+}
+.lee-header-c15{
+    width:260px;
+    text-align: center;
+}
+.lee-table td.lee-cell{
+    word-break: break-all;
+    padding:5px;
+    border: 1px solid #333;
+}
+.lee-cell-result{
+    text-align: left;
+}
+/*服务处理结果*/

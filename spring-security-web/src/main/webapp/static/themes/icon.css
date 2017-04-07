@@ -1,0 +1,222 @@
+.icon-project {
+    background: url('icons/project.png') no-repeat;
+}
+
+.icon-template {
+    background: url('icons/template.png') no-repeat;
+}
+
+.icon-pre {
+    background: url('icons/pre.png') no-repeat left center;
+}
+
+.icon-next {
+    background: url('icons/next.png') no-repeat left center;
+}
+
+.icon-config {
+    background: url('icons/config.png') no-repeat;
+}
+
+.icon-setting {
+    background: url('icons/setting.png') no-repeat;
+}
+
+.icon-generate {
+    background: url('icons/generate.png') no-repeat;
+}
+
+.icon-preview {
+    background: url('icons/preview.png') no-repeat;
+}
+
+.icon-printer {
+    background: url('icons/printer.png') no-repeat;
+}
+
+.icon-delete {
+    background: url('icons/delete.png') no-repeat;
+}
+
+.icon-delete_1 {
+    background: url('icons/delete_1.png') no-repeat;
+}
+
+.icon-view {
+    background: url('icons/view.png') no-repeat;
+}
+
+.icon-add_1 {
+    background: url('icons/add.png') no-repeat;
+}
+
+.icon-barcode {
+    background: url('icons/barcode.png') no-repeat;
+}
+
+.icon-start {
+    background: url('icons/cog_start.png') no-repeat;
+}
+
+.icon-loading {
+    background: url('icons/loading.gif') no-repeat;
+}
+
+.icon-search {
+    background: url('icons/tool_search.png') no-repeat;
+}
+
+.icon-tool-search {
+    background: url('icons/btn-ud.png') no-repeat;
+}
+
+/*check card */
+.icon-card-info {
+    background: url(icons/examine/card.png) no-repeat left top;
+}
+
+.icon-list-step {
+    background: url(icons/examine/step.png) no-repeat left top;
+}
+
+.icon-check-doc {
+    background: url(icons/examine/document.png) no-repeat left top;
+}
+
+.icon-logout {
+    background: url(icons/exit_realistik_19.png) no-repeat left 50%;
+}
+
+.icon-changepassword {
+    background: url(icons/changepassword_19.png) no-repeat left 50%;
+}
+
+.icon-help {
+    background: url(icons/help.gif) no-repeat left center;
+}
+
+.icon-flat-tip {
+    background: url(icons/flat-tip.png) no-repeat left center;
+}
+.icon-tip {
+    background: url(icons/tip.png) no-repeat left center;
+}
+
+.icon-bookloss {
+    background: url(icons/cardservice/services-icon.png) no-repeat -364px -23px;
+}
+/*现场申领*/
+.icon-502001 {
+    background: url(icons/cardservice/services-icon.png) no-repeat -9px -23px;
+}
+/*个人领卡*/
+.icon-504002 {
+    background: url(icons/cardservice/services-icon.png) no-repeat -100px -23px;
+}
+/*书面挂失*/
+.icon-506001 {
+    background: url(icons/cardservice/services-icon.png) no-repeat -188px -23px;
+}
+/*解挂*/
+.icon-507001 {
+    background: url(icons/cardservice/services-icon.png) no-repeat -276px -23px;
+}
+/*补卡*/
+.icon-508001 {
+    background: url(icons/cardservice/services-icon.png) no-repeat -364px -23px;
+}
+/*换卡*/
+.icon-509001 {
+    background: url(icons/cardservice/services-icon.png) no-repeat -452px -23px;
+}
+/*重置服务密码*/
+.icon-510001 {
+    background: url(icons/cardservice/services-icon.png) no-repeat -9px -106px;
+}
+
+/*重置卡密码*/
+.icon-511001 {
+    background: url(icons/cardservice/services-icon.png) no-repeat -100px -106px;
+}
+/*更改个人资料*/
+.icon-512001 {
+    background: url(icons/cardservice/services-icon.png) no-repeat -188px -106px;
+}
+/*持卡人信息查询打印*/
+.icon-513001 {
+    background: url(icons/cardservice/services-icon.png) no-repeat -276px -106px;
+}
+/*加载应用*/
+.icon-516001 {
+    background: url(icons/cardservice/services-icon.png) no-repeat -364px -106px;
+}
+/*卡注销*/
+.icon-517001 {
+    background: url(icons/cardservice/services-icon.png) no-repeat -452px -106px;
+}
+/*卡面信息变更*/
+.icon-519001 {
+    background: url(icons/cardservice/services-icon.png) no-repeat -452px -106px;
+}
+/*单据补打*/
+.icon-527001 {
+    background: url(icons/cardservice/services-icon.png) no-repeat -540px -106px;
+}
+.icon-message-ok
+{
+    background: url(icons/ok_32.png) no-repeat left center;
+}
+.icon-message-warning
+{
+    background: url(icons/warning_32.png) no-repeat left center;
+    color: #DE0000;
+}
+
+.icon-scanner {
+    background: url(icons/hardware-scanner.png) no-repeat left center;
+}
+.icon-print{
+    background:url('icons/icons_v1_16.png') no-repeat  -9px -10px;
+}
+.icon-upload{
+    background:url('icons/icons_v1_16.png') no-repeat -9px -34px;
+}
+.icon-download{
+    background:url('icons/icons_v1_16.png') no-repeat -9px -58px;
+}
+.icon-save{
+    background:url('icons/icons_v1_16.png') no-repeat -10px -83px;
+}
+.icon-citizencard{
+    background:url('icons/icons_v1_16.png') no-repeat -8px -108px;
+}
+.icon-identitycard{
+    background:url('icons/icons_v1_16.png') no-repeat -8px -130px;
+}
+.icon-scan{
+    background: url(icons/icons_v1_16.png) no-repeat -8px -153px;
+}
+.icon-load{
+    background: url(icons/icons_v1_16.png) no-repeat -10px -178px;
+}
+.icon-browse{
+    background: url(icons/icons_v1_16.png) no-repeat -8px -202px;
+}
+.messager-icon{
+    background:url('icons/icons_v1_32.png') no-repeat;
+}
+.messager-error{
+    background-position:8px -63px ;
+}
+.messager-warning{
+    background-position:-40px  -63px ;
+}
+.messager-ok{
+    background-position:-88px -63px ;
+}
+.messager-info{
+    background-position: -139px -63px ;
+}
+.messager-question{
+    background-position: -184px -63px ;
+}

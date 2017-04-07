@@ -1,0 +1,38 @@
+table.tiletable {
+	border:1px solid #AEDEF2;
+	border-collapse: collapse;
+}
+			
+td.tiletd{
+	color: #0066cc;
+	font-size:14px;
+	color:#05B;
+}
+			
+th.tileth {
+	width: 671px;
+	color: #0066cc;
+	font-size:14px;
+	color:#05B;
+	border:1px solid #AEDEF2;
+}
+			
+td.tileNormal {
+	border:1px solid #AEDEF2;
+	font-size:24px;
+	font-family: '新宋体';
+	text-align:center;
+	color: #333;
+	cursor:hand;
+	cursor:pointer;
+}
+			
+td.tileSelected {
+	border:1px solid #AEDEF2;
+	background:#DAF0F1;
+	font-size:24px;
+	font-family: '新宋体';
+	color: #333;
+	cursor:hand;
+	cursor:pointer;
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.boomhope.redis.domain.Principal">
+	<sql id="feildName">
+	    e1.id id,e1.name name,e1.short_name shortName,e1.en_name enName,e1.type type,e1.tag tag,e1.sort sort,e1.status status
+	   ,e1.remark remark,e1.email email,e1.phone phone,e1.tel tel,e1.pwd pwd,e1.stamp stamp,e1.begin begin,e1.end end
+	   ,e1.username username
+	</sql>
+	<sql id="whereEqual">
+		<if test="id != null">
+			AND e1.id = #{id}
+		</if>
+		<if test="username != null">
+			AND e1.username = #{username}
+		</if>
+		<if test="name != null">
+			AND e1.name = #{name}
+		</if>
+	</sql>
+	
+	<select id="getUserByName" resultType="Principal" parameterType="String">
+	    select <include refid="feildName"/> from t_principals e1 where e1.name=#{username}
+	</select>
+</mapper>
